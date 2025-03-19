@@ -93,3 +93,7 @@ app.get("/dashboard", authMiddle,async (req,res)=>{
 app.listen(port,()=>{
     console.log('server is running on port 4000')
 })
+
+app.use('/',(req,res)=>{
+    res.send("welcome to my project  chinna")
+})
